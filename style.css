@@ -1,0 +1,33 @@
+.container {
+  background-color: white;
+}
+
+
+h1 {
+  color:grey;
+}
+
+.navbar {
+  background-color: yellow;
+  width: 100%;
+}
+
+td {
+  border:1px solid black;
+}
+
+footer {
+  background-color: red;
+}
+
+.news {
+  padding:10px;
+}
+
+.aside_menu {
+
+}
+
+.spacer {
+  margin-bottom: 20px;
+}
