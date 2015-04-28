@@ -1,5 +1,5 @@
 <?php
-require 'config.php';
+require 'config/config.php';
 extract($_POST);
 $author = nl2br(addslashes(htmlspecialchars($author)));
 $content = nl2br(addslashes(htmlspecialchars($content)));

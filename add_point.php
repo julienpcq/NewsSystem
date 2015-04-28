@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'config.php';
+require 'config/config.php';
 extract($_POST);
 $name = $_SESSION['pseudo'];
 

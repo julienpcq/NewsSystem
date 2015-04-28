@@ -1,7 +1,7 @@
 <?php
 session_start();
 // Insert new post in database
-require 'config.php';
+require 'config/config.php';
 extract($_POST);
 $sql = $bdd->exec("INSERT INTO posts(name,image,content,author) VALUES ('$name','$image','$content','$author')");
 $id = $bdd->lastInsertId();

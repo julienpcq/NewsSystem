@@ -17,7 +17,7 @@ if (isset($_POST['submit']))
   }
   else
   {
-    require "config.php";
+    require "config/config.php";
     $password = sha1($password);
     $login = $bdd->query("SELECT * FROM members WHERE pseudo='$pseudo' AND password='$password'");
     $count = $login->rowCount();

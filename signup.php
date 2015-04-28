@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'config.php';
+require 'config/config.php';
 
 if (isset($_POST) && isset($_POST['pseudo']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['groupe_id']))
   {

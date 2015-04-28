@@ -24,7 +24,7 @@ session_start();
       <table>
         <tbody>
         <?php
-        require 'config.php';
+        require 'config/config.php';
         // Display last posts
         $display_posts = $bdd->query("SELECT * FROM posts ORDER BY id DESC LIMIT 10");
         while($data = $display_posts->fetch())

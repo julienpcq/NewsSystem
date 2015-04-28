@@ -4,7 +4,7 @@
 <html>
 <head>
     <?php
-    require 'config.php';
+    require 'config/config.php';
     include 'head.php';
     // Connection to the DB in the head because I need to catch the title to display it in the nav tab.
       $id=$_GET['id'];
@@ -22,6 +22,7 @@
 <!-- Display the name of the post -->
 <?php
 echo"<h1>{$data["name"]}</h1>";
+echo"<div class=\"image_article img-responsive col-lg-6\"><img src=\"images/articles/".$data['id']."/".$data['image']."\"></div>";
 echo $data['id'];
 ?>
 
