@@ -14,7 +14,7 @@ session_start();
 
 <div class="container">
   <div class="row">
-    <div class="col-lg-4 col-lg-offset-4"><a href="../form_new_post.php">Ajouter un nouveau post</a></div>
+    <div class="col-lg-4 col-lg-offset-8"><a href="../form_new_post.php">Ajouter un nouveau post</a></div>
     <div class="col-lg-4">
       <h3>Derniers articles</h3>
       <?php
