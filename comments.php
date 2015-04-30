@@ -16,13 +16,17 @@
   <title><?php echo $title ?></title>
 </head>
 <body>
+  <div class="container-fluid">
+    <div class="row">
+
   <?php include('navbar.php'); ?>
   <a href="index.php">Retour</a>
 
 <!-- Display the name of the post -->
 <?php
 echo"<h1>{$data["name"]}</h1>";
-echo"<div class=\"image_article img-responsive col-lg-6\"><img src=\"images/articles/".$data['id']."/".$data['image']."\"></div>";
+echo"<div class=\"image_article img-responsive col-lg-12\"><img src=\"images/articles/".$data['id']."/".$data['image']."\"></div>";
+echo"<p>{$data["content"]}</p>";
 echo $data['id'];
 ?>
 
@@ -57,6 +61,7 @@ while ($data = $sql->fetch()) {
   echo "<p>".$data['content']."</p>";
 }
 ?>
-
+</div>
+</div>
 </body>
 </html>

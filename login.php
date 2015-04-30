@@ -25,6 +25,9 @@ if (isset($_POST['submit']))
     if($count == 1)
     {
       $_SESSION['pseudo'] = $pseudo;
+      $find_role_id = $bdd->query("SELECT * FROM members WHERE pseudo='$pseudo'");
+      $_SESSION['groupe_id'] = $find_role_id->fetch(PDO::FETCH_ASSOC);
+      //var_dump($_SESSION['groupe_id']);
       header('Location:index.php');
     }
     else
@@ -49,6 +52,7 @@ if (isset($_POST['submit']))
 <p>Votre mot de passe :</p>
 <input type="password" name="password">
 <br/><br/>
+<input type="hidden" name="groupe">
 <input type="submit" name="submit" value="Se connecter">
 </form>
 <a href="signup.php">Je n'ai pas encore de compte</a>

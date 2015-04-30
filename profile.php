@@ -21,12 +21,14 @@ if(isset($_SESSION['pseudo']))
  <a href="update_profile.php">Modifier mes informations</a>
  <br/>
  <a href="desinscrire.php">Me désinscrire du site</a>
+
 <?php
 }
 else
 {
   header('Location:login.php');
 }
+echo ($_SESSION['groupe_id']);
 ?>
 
 

@@ -1,27 +1,51 @@
-.container {
+.container-fluid {
+  background-size: 100%;
   background-color: white;
+  width:100%;
 }
 
-
 h1 {
-  color:grey;
+  color:white;
 }
 
 .navbar {
-  background-color: yellow;
+  background-color: grey;
   width: 100%;
 }
 
-td {
-  border:1px solid black;
+p {
+  color: black;
 }
+
 
 footer {
   background-color: red;
 }
 
 .news {
-  padding:10px;
+
+}
+
+.news_index {
+  border-bottom: 1px solid grey;
+  margin: 15px;
+}
+
+
+.news_index_img {
+    max-width:160px; /* you can use % */
+    height: auto;
+    max-height: 200px;
+}
+
+}
+
+.news_index_content {
+
+}
+
+.news_index_other {
+
 }
 
 .aside_menu {
@@ -30,4 +54,16 @@ footer {
 
 .spacer {
   margin-bottom: 20px;
+}
+
+.admin_comments_table td{
+  border:1px solid black;
+}
+
+h3 {
+  color:blue;
+}
+
+.thumbnail {
+  max-width: 100px;
 }

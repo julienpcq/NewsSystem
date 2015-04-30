@@ -9,7 +9,6 @@
 
     if(isset($_SESSION['pseudo']))
     {
-      echo "<a href=\"form_new_post.php\">Ajouter un nouveau post</a> ";
       echo "<a href=\"logout.php\">Se déconnecter</a> ";
       echo "<a href=\"profile.php\">Mon profil</a>";
 
@@ -18,6 +17,15 @@
     {
       echo "<a href=\"login.php\">Se connecter</a> ";
       echo "<a href=\"signup.php\">S'inscrire</a>";
+    }
+    if(isset($_SESSION['pseudo']))
+    {
+      if(isset($_SESSION['groupe_id']))
+        {
+          //print_r($_SESSION['groupe_id']);
+          echo " <a href=\"admin/admin.php\">Administration</a>";
+
+        }
     }
     ?>
   </div>

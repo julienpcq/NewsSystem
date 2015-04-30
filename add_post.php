@@ -3,6 +3,8 @@ session_start();
 // Insert new post in database
 require 'config/config.php';
 extract($_POST);
+$name = addslashes($name);
+$content = addslashes($content);
 $sql = $bdd->exec("INSERT INTO posts(name,image,content,author) VALUES ('$name','$image','$content','$author')");
 $id = $bdd->lastInsertId();
 
